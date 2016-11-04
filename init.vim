@@ -22,3 +22,8 @@ call plug#end()
 set termguicolors
 set background=dark
 colorscheme solarized
+
+"""""""""""""""""
+" Simple config "
+"""""""""""""""""
+nmap <F3> :NERDTreeToggle<CR>
