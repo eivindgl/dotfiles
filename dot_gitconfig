@@ -3,3 +3,5 @@
 	name = Eivind Gard Lund
 [core]
 	editor = nvim
+[color]
+	ui = true
