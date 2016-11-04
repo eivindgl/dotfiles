@@ -1,0 +1,5 @@
+[user]
+	email = e.g.lund@medisin.uio.no
+	name = Eivind Gard Lund
+[core]
+	editor = nvim

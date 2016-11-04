@@ -2,8 +2,9 @@ SDIR=$(readlink -m $(dirname $0))
 
 function ensure_dir_and_link() {
 	DDIR=$1
-	name=$2
 	src="$SDIR/$name"
+
+	name=$(echo $2 | sed 's/^dot_/./')
 	dst="$DDIR/$name"
 
 	if [ -f "$dst" ] ; then
@@ -20,3 +21,4 @@ function ensure_dir_and_link() {
 }
 
 ensure_dir_and_link $HOME/.config/nvim init.vim
+ensure_dir_and_link $HOME dot_gitconfig
