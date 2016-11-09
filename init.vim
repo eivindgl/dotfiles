@@ -18,7 +18,7 @@ Plug  'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-expand-region'
-
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
