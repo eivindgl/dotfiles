@@ -22,9 +22,15 @@ Plug 'honza/vim-snippets'
 
 call plug#end()
 
+"""""""""
+" Basic "
+"""""""""
+set shiftwidth=2
 set termguicolors
 set background=dark
 colorscheme solarized
+
+
 
 """""""""""""""""
 " Simple config "
@@ -62,3 +68,5 @@ set visualbell
 
 nmap <silent> <Leader>n :silent :bn<CR>
 nmap <silent> <Leader>p :silent :bp<CR>
+
+nmap <Leader>r :!perl6 %<CR>
