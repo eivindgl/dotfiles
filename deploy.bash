@@ -9,7 +9,7 @@ function ensure_dir_and_link() {
 	dst="$DDIR/$name"
 
 	if [ -f "$dst" ] ; then
-		echo "$dst exists, skipping"
+		echo "Skipping: $dst exists"
 		return
 	elif [ ! -f "$src" ] ; then
 		echo > /dev/stderr "Error: Missing file $src"
@@ -23,3 +23,4 @@ function ensure_dir_and_link() {
 
 ensure_dir_and_link $HOME/.config/nvim init.vim
 ensure_dir_and_link $HOME dot_gitconfig
+ensure_dir_and_link $HOME dot_tmux.conf
