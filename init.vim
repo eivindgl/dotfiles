@@ -71,3 +71,8 @@ nmap <silent> <Leader>n :silent :bn<CR>
 nmap <silent> <Leader>p :silent :bp<CR>
 
 nmap <Leader>r :!perl6 %<CR>
+" Remove whitespace at end of line (http://vi.stackexchange.com/a/2285)
+nnoremap <Leader><C-w> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+" Closer buffer, but not window
+nnoremap <Leader>d :bp\|bd #<CR>
