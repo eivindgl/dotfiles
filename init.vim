@@ -20,6 +20,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-expand-region'
 Plug 'honza/vim-snippets'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
+Plug 'dag/vim-fish'
 
 call plug#end()
 
@@ -71,3 +72,8 @@ nmap <silent> <Leader>n :silent :bn<CR>
 nmap <silent> <Leader>p :silent :bp<CR>
 
 nmap <Leader>r :!perl6 %<CR>
+
+" use groovy syntax for nextflow files
+autocmd BufRead,BufNewFile *.nf set filetype=groovy
+
+
