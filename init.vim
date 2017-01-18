@@ -8,7 +8,6 @@ endif
 call plug#begin()
 
 Plug 'altercation/vim-colors-solarized'
-Plug 'jalvesaq/Nvim-R'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -19,7 +18,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdcommenter'
 Plug 'terryma/vim-expand-region'
 Plug 'honza/vim-snippets'
-Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
+Plug 'vim-scripts/groovyindent-unix'
+Plug 'vim-perl/vim-perl'
 Plug 'dag/vim-fish'
 
 call plug#end()
