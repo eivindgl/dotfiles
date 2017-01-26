@@ -49,9 +49,9 @@ vmap <C-v> <Plug>(expand_region_shrink)
 " The current buffer can be put to the background without writing to disk
 set hidden
 
-"  set together, will make /-style searches case-sensitive only 
+"  set together, will make /-style searches case-sensitive only
 " if there is a capital letter in the search expression
-set ignorecase 
+set ignorecase
 set smartcase
 
 set title
@@ -79,6 +79,9 @@ autocmd BufRead,BufNewFile *.nf set filetype=groovy
 
 " Remove whitespace at end of line (http://vi.stackexchange.com/a/2285)
 nnoremap <Leader><C-w> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
+" CtrlP Buffer
+nnoremap <Leader><C-p> :CtrlPBuffer<CR>
 
 " Closer buffer, but not window
 nnoremap <Leader>d :bp\|bd #<CR>
